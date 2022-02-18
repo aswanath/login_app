@@ -24,11 +24,12 @@ class _HomePageState extends State<HomePage> {
                         backgroundImage: AssetImage('assets/images/sample.jpg'),
                         radius: 30,
                       )
-                    : const SizedBox(
+                    :  SizedBox(
                         width: 60,
                         height: 60,
                         child: DecoratedBox(
                           decoration: BoxDecoration(
+                            borderRadius:BorderRadius.circular(15),
                               image: DecorationImage(
                             image: AssetImage('assets/images/sample.jpg'),
                           )),

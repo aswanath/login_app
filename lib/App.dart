@@ -12,11 +12,12 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.indigo[400],
       appBar: AppBar(
-        backgroundColor: Colors.red[900],
+
+        backgroundColor: Colors.red,
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Colors.red[900],
+          statusBarColor: Colors.red,
         ),
       ),
       body: SafeArea(
@@ -38,6 +39,7 @@ class Login extends StatelessWidget {
               SizedBox(
                 width: 200,
                 child: TextFormField(
+                  style: TextStyle(color: Colors.white),
                   controller: _userIdController,
                   decoration: const InputDecoration(
                     focusedBorder: OutlineInputBorder(
@@ -47,6 +49,7 @@ class Login extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(35))),
                     border: OutlineInputBorder(),
                     hintText: 'user id',
+                    hintStyle: TextStyle(color: Colors.grey)
                   ),
                 ),
               ),
@@ -56,6 +59,7 @@ class Login extends StatelessWidget {
               SizedBox(
                   width: 200,
                   child: TextFormField(
+                    style: TextStyle(color: Colors.white),
                     controller: _passwordController,
                     obscureText: true,
                     autocorrect: false,
@@ -67,6 +71,7 @@ class Login extends StatelessWidget {
                           borderRadius: BorderRadius.all(Radius.circular(35))),
                       hintText: 'password',
                       border: OutlineInputBorder(),
+                        hintStyle: TextStyle(color: Colors.grey)
                     ),
                   )),
               const SizedBox(
